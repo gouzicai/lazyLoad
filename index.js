@@ -16,11 +16,14 @@ function imgonload(){
 
 
 function scollImg(){
+    let timer = null;
     let _this = this;
+    let args = arguments;
     return function(){
         // fn.apply(_this);
-        setTimeout(()=>{
-            this.imgonload.apply(_this);
+        clearTimeout(timer);
+        timer = setTimeout(()=>{
+            this.imgonload.apply(_this,args);
         },500)
     }
 }
