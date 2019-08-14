@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+li{
+
+    height:800px;
+    list-style: none;
+    box-sizing: border-box;
+    border: 1px solid;
+}
+
+li img{
+    width:500px;
+    display: block;
+    margin:10px auto;
+}
